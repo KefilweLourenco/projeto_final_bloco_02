@@ -1,26 +1,51 @@
-## Etapa 2 - CRUD Categoria
+# Projeto Final Bloco 02 - Farmácia
 
-A branch `02_CRUD_Categoria` contém a implementação do CRUD completo do recurso **Categoria**, conforme solicitado no Performance Goal Check do Bloco 02.
+Projeto desenvolvido para o **Performance Goal Check do Bloco 02** da **Generation Brasil**, com foco na construção de uma API REST utilizando **NestJS**, **TypeScript**, **TypeORM** e **MySQL**.
 
-O recurso Categoria representa os grupos de produtos disponíveis no sistema de e-commerce de farmácia, como:
+A proposta do projeto é desenvolver a base de um sistema de **comércio eletrônico de uma farmácia**, aplicando os conceitos estudados em NestJS a partir da estrutura do projeto Blog Pessoal.
+
+## Objetivo do projeto
+
+Construir uma aplicação backend para uma farmácia, com conexão ao banco de dados e implementação do recurso **Categoria**.
+
+Nesta etapa do projeto, a aplicação deve possuir:
+
+- configuração inicial do projeto NestJS;
+- conexão com banco de dados MySQL;
+- organização do projeto em branches;
+- criação do recurso Categoria;
+- CRUD completo do recurso Categoria com 6 métodos;
+- testes da aplicação utilizando o Insomnia.
+
+## Recurso principal
+
+### Categoria
+
+O recurso **Categoria** representa os tipos ou grupos de produtos da farmácia.
+
+Exemplos de categorias possíveis:
 
 - Medicamentos
-- Antigripais
-- Dermocosméticos
-- Vitaminas e suplementos
 - Higiene pessoal
+- Dermocosméticos
+- Vitaminas
+- Suplementos
+- Infantil
 
-### Métodos implementados
+## Tecnologias utilizadas
 
-| Método HTTP | Rota | Descrição |
-|---|---|---|
-| GET | `/categorias` | Lista todas as categorias |
-| GET | `/categorias/:id` | Busca uma categoria pelo ID |
-| GET | `/categorias/descricao/:descricao` | Busca categorias pela descrição |
-| POST | `/categorias` | Cadastra uma nova categoria |
-| PUT | `/categorias` | Atualiza uma categoria existente |
-| DELETE | `/categorias/:id` | Deleta uma categoria pelo ID |
+- Node.js
+- TypeScript
+- NestJS
+- TypeORM
+- MySQL
+- Insomnia
+- Git
+- GitHub
 
-### Testes
+## Banco de dados
 
-Os testes foram realizados no **Insomnia**, contemplando os 6 métodos obrigatórios do CRUD.
+Banco de dados utilizado no projeto:
+
+```sql
+CREATE DATABASE db_projeto_final_bloco_02;
