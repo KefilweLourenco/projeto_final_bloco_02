@@ -16,7 +16,7 @@ export class Produto {
   descricao!: string;
 
   @IsNotEmpty()
-  @Column({ type: 'decimal', precision: 10, scale: 2, nullable: false })
+  @Column({ type: 'decimal', precision: 10, scale: 2 })
   preco!: number;
 
   @IsNotEmpty()
